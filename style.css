@@ -5,10 +5,12 @@
   --text-secondary: #000000;
   --bg-primary: #f5eadd;
   --bg-secondary: #061842;
-  --red: #d8315b;
+  --bg-3: #eedfcf;;
+  --red: #e63d67;
   --lightblue: #3e92cc;
   --transition-speed: 700ms;
 }
+
 
 body {
   color: black;
@@ -61,9 +63,7 @@ path {
   fill: white;
 }
 
-.nav-item:last-child {
-  margin-top: auto;
-}
+
 
 .nav-link {
   display: flex;
@@ -79,6 +79,9 @@ path {
   filter: grayscale(0%) opacity(1);
   background: var(--red);
   color: var(--text-secondary);
+}
+.nav-link:hover path{
+  fill:var(--bg-secondary)
 }
 
 .link-text {
@@ -144,6 +147,17 @@ path {
   main {
     margin: 0;
   }
+  .bottom {
+    background-color: rgb(25, 33, 49);
+    color: var(--text-primary);
+    border: none;
+    padding: 1rem;
+    padding-left: 1rem;
+    font-size: 0.8rem;
+  }
+  header{
+    align-items: center;
+  }
 }
 
 /* Large screens */
@@ -164,26 +178,24 @@ path {
 
   .navbar:hover .logo svg {
     margin-left: 11rem;
-  }
+  } 
 
   .navbar:hover .logo-text {
     left: 0px;
+    
   }
+  .bottom {
+    background-color: rgb(25, 33, 49);
+    color: var(--text-primary);
+    margin: 0 0 0 5rem;
+    border: none;
+    padding: 1rem;
+    padding-left: 1rem;
+    font-size: 0.8rem;
+  }
+  
 }
 
-.dark {
-  --text-primary: #b6b6b6;
-  --text-secondary: #ffffff;
-  --bg-primary: #23232e;
-  --bg-secondary: #141418;
-}
-
-.light {
-  --text-primary: #1f1f1f;
-  --text-secondary: #000000;
-  --bg-primary: #ffffff;
-  --bg-secondary: #e4e4e4;
-}
 
 
 .contents {
@@ -196,6 +208,7 @@ main {
   padding: 1em;
   margin-bottom: 0;
   padding-bottom: 3.5em;
+  padding-top: 3.5rem;
   text-align: center;
   background-color: var(--bg-primary);
 }
@@ -205,10 +218,34 @@ header {
   font-size: 1.5rem;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
     url("artwall.jpg");
+  padding-left: 3.75em;
+}
+
+.echa{
+  background-color: var(--bg-3);
+  border-radius: 20px;
+  padding: 1rem;
+}
+
+.echa:hover, .welcome:hover{
+  color:var(--red);
+  background-color: var(--bg-secondary);
+  transition: 300ms;
+  cursor:pointer;
+  border-width: 100px;
+  border-color: var(--red);
 }
 
 .welcome {
   margin-top: 5rem;
+  background-color: var(--bg-3);
+  border-radius: 20px;
+  padding:1rem;
+}
+
+a{
+  text-decoration: none;
+  color: var(--text-secondary)
 }
 
 button {
@@ -226,15 +263,10 @@ button:hover {
   transition: 200ms;
 }
 
-.bottom {
-  background-color: rgb(25, 33, 49);
-  color: var(--text-primary);
-  margin: 0 0 0 5rem;
-  border: none;
-  padding: 1rem;
-  padding-left: 1rem;
-  font-size: 0.8rem;
+.belowshit:hover{
+cursor: pointer;
 }
+
 
 hr {
   height: 1px;
