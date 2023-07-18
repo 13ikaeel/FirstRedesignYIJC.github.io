@@ -8,13 +8,13 @@
   --bg-3: #eedfcf;;
   --red: #e63d67;
   --lightblue: #3e92cc;
-  --transition-speed: 700ms;
+  --transition-speed: 700ms; 
 }
 
 
 body {
   color: black;
-  background-color: white;
+  background-color: white; 
   margin: 0;
   padding: 0;
 }
@@ -62,7 +62,6 @@ main {
 path {
   fill: white;
 }
-
 
 
 .nav-link {
@@ -207,25 +206,30 @@ main {
   color: var(--text-secondary);
   padding: 1em;
   margin-bottom: 0;
-  padding-bottom: 3.5em;
-  padding-top: 3.5rem;
+  padding-bottom: 2em;
+  padding-top: 1rem;
   text-align: center;
   background-color: var(--bg-primary);
 }
 
 header {
   color: var(--text-primary);
-  font-size: 1.5rem;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+  font-size: 2rem;
+  background: linear-gradient(rgba(0, 1, 70, 0.9), rgba(58, 0, 0, 0.8)),
     url("artwall.jpg");
   padding-left: 3.75em;
+  padding-top: 2rem; 
 }
+
+
 
 .echa{
   background-color: var(--bg-3);
   border-radius: 20px;
   padding: 1rem;
 }
+
+
 
 .echa:hover, .welcome:hover{
   color:var(--red);
@@ -236,11 +240,24 @@ header {
   border-color: var(--red);
 }
 
+#Capa_1{
+  width:50px;
+  height:50px
+}
+.playbutton{
+  fill:var(--bg-secondary)
+}
+
 .welcome {
   margin-top: 5rem;
   background-color: var(--bg-3);
   border-radius: 20px;
   padding:1rem;
+}
+
+.welcome:hover .playbutton{
+  fill: var(--red);
+  transition: 300ms;
 }
 
 a{
@@ -266,10 +283,12 @@ button:hover {
 .belowshit:hover{
 cursor: pointer;
 }
+ 
 
-
+ 
 hr {
   height: 1px;
   border: none;
   background-color: var(--bg-primary);
 }
+
